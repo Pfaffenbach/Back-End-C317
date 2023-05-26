@@ -1,96 +1,90 @@
 const create = {
-    nome: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+  nome: {
+    presence: {
+      allowEmpty: false,
     },
-    email: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  email: {
+    presence: {
+      allowEmpty: false,
     },
-    senha: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  servico: {
+    presence: {
+      allowEmpty: true,
     },
-    servico: {
-        presence: {
-            allowEmpty: true,
-        },
-        type: 'string',
+    type: "string",
+  },
+  celular: {
+    presence: {
+      allowEmpty: false,
     },
-    celular: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  cidade: {
+    presence: {
+      allowEmpty: false,
     },
-    cidade: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
-    },
+    type: "string",
+  },
 };
 
 const update = {
-    nome: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+  nome: {
+    presence: {
+      allowEmpty: false,
     },
-    email: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  email: {
+    presence: {
+      allowEmpty: false,
     },
-    servico: {
-        presence: {
-            allowEmpty: true,
-        },
-        type: 'string',
+    type: "string",
+  },
+  servico: {
+    presence: {
+      allowEmpty: true,
     },
-    celular: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  celular: {
+    presence: {
+      allowEmpty: false,
     },
-    cidade: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+    type: "string",
+  },
+  cidade: {
+    presence: {
+      allowEmpty: false,
     },
+    type: "string",
+  },
 };
 
 const get = {
-    servico: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
-    }
+  servico: {
+    presence: {
+      allowEmpty: false,
+    },
+    type: "string",
+  },
 };
 
 const deleteBy = {
-    email: {
-        presence: {
-            allowEmpty: false,
-        },
-        type: 'string',
+  email: {
+    presence: {
+      allowEmpty: false,
     },
+    type: "string",
+  },
 };
 
 module.exports = {
-    update,
-    create,
-    get,
-    deleteBy,
+  update,
+  create,
+  get,
+  deleteBy,
 };

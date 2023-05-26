@@ -70,14 +70,11 @@ const FuncRepository = {
   async login(data) {
     try {
       await connectToDatabase();
-      console.log("aqui");
 
       const user = await FuncModel.findOne({
         email: data.email,
         senha: data.senha,
       });
-
-      console.log(user);
 
       if (!user) return { erro: "E-mail ou senha incorretos!" };
 
