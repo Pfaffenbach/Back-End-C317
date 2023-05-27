@@ -24,7 +24,6 @@ const FuncSchema = new Schema({
   },
   email: {
     type: String,
-    unique: true,
   },
   nome: String,
   servico: String,
